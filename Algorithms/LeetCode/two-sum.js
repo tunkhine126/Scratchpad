@@ -10,6 +10,18 @@
 // return [0, 1]
 
 
+// brute force 
+const twoSum = function(nums, target) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; i < nums.length; i++) {
+      if (nums[i] + nums[j] == target) {
+        return [i, j]
+      }
+    }
+  }
+}
+
+// hash map
 const twoSum = function (nums, target) {
   let compare = {} // 
 
